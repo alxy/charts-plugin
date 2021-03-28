@@ -1,0 +1,7 @@
+<div class="scoreboard <?= $cssClasses ?>">
+    <div data-control="toolbar">
+        <?php foreach($charts as $chart): ?>
+            <?= $chart->render() ?>
+        <?php endforeach ?>
+    </div>
+</div>

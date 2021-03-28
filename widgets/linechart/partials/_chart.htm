@@ -1,0 +1,12 @@
+<div
+    class="control-chart <?= $cssClasses ?>"
+    data-control="chart-line"
+    data-chart-options="xaxis: <?= htmlspecialchars($xAxisOptions) ?>, yaxis: <?= htmlspecialchars($yAxisOptions) ?>"
+    data-time-mode="<?= $timeMode ?>">
+    <!-- Dataset -->
+    <span 
+        data-chart="dataset" 
+        data-set-data="<?= $this->getDatasetData() ?>"
+        data-set-name="<?= $this->alias ?>">
+    </span>
+</div>

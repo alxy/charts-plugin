@@ -1,0 +1,9 @@
+<div
+    class="control-chart <?= $cssClasses ?>"
+    data-control="chart-bar">
+    <ul>
+        <?php foreach($data as $row): ?>
+            <li><?= $row['label'] ?> <span><?= $row['value'] ?></span></li>
+        <?php endforeach; ?>
+    </ul>
+</div>
